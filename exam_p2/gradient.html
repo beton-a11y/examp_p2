@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Uso de CSS Gradient</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <style>
+    body {
+      margin: 0;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, #2196f3, #3f51b5, #9c27b0);
+      background-size: 400% 400%;
+      animation: gradientShift 8s ease infinite;
+    }
+
+    @keyframes gradientShift {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+  </style>
+</head>
+<body>
+
+  <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Bluc</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item"><a class="nav-link" href="portada.html">Portada</a></li>
+          <li class="nav-item"><a class="nav-link" href="api.html">Clima</a></li>
+          <li class="nav-item"><a class="nav-link" href="gradient.html">Gradient</a></li>
+          <li class="nav-item"><a class="nav-link active" href="img.html">Divs</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <h1>Uso de CSS Gradient</h1>
+  <p>Ejemplo de fondo personalizado con gradient</p>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
